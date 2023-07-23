@@ -1,0 +1,59 @@
+.already-given {
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: antiquewhite;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 2px;
+    grid-template-rows: repeat(9, 40px);
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.2s ease-in-out; /* Add transition for smooth effect */
+}
+
+input:focus {
+    box-shadow: 0 0 5px #007bff; /* Blue shadow when focused */
+    transform: scale(1.1); /* Scale up the input field when focused */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.solved {
+    background-color: #b6e78a; /* Green background color */
+}
